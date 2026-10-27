@@ -1,0 +1,15 @@
+.venv/
+.work/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+data/mnist/
+# Ignore tool scratch logs at the project root, but retain evidence logs.
+/*.jou
+/*.log
+.Xil/
+# Office temporary lock files are not document deliverables.
+~$*.docx
+

@@ -1,0 +1,16 @@
+{
+  "file": "exp3_nonhardware_bundle.zip",
+  "sha256": "87276181dc305568c1d0deedc53d575d415f76d54dcb99d2ca0130a5acef58cf",
+  "bytes": 5029286,
+  "files": 242,
+  "hardware_status": "not_performed_awaiting_user",
+  "excluded": [
+    "virtualenv",
+    "Vivado installation",
+    "build cache",
+    "raw MNIST download",
+    "original video/photo",
+    "document rendering intermediates"
+  ],
+  "reproduction": "README.md; Python 3.12 and Vivado/HLS 2018.3 required"
+}

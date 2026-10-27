@@ -1,0 +1,19 @@
+{
+  "segment_order": "dp,g,f,e,d,c,b,a",
+  "python_tests_passed": 30,
+  "rtl_test_suites_passed": 7,
+  "bit_sha256": {
+    "bringup": "7ca74dd7ef6ad5f6a2bfa3db406bbb2950ad052a09d6c2e989d63c2cff959673",
+    "baseline": "ed9034e2087ce34c95b102958d6fde5253f87553f98a86bcace026504a433355",
+    "medium": "bf5d0d1236627d7e656b1af75e2f07091aab77ada1d7af16e7c45820b1936c50",
+    "fast": "1947db632019bdf04f1d97f1bae131a028a3618f0748965f6c5a63767fd9ebab"
+  },
+  "board_port_reported": "COM7",
+  "physical_retest": "passed_display_only_reported_by_user",
+  "root_cause": "RTL and test expectations both used the reversed schematic segment order",
+  "release_replaces": "display_v1",
+  "transient_build_failure": "first fast build failed reading retarget_vhdl.tcl; unchanged retry passed; original log retained",
+  "user_confirmation": "这次显示正常",
+  "physical_rightmost_index_verification": "not explicitly reported",
+  "uart_echo_test": "not yet reported"
+}

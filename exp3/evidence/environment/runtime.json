@@ -1,0 +1,26 @@
+{
+  "python": "3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]",
+  "executable": "D:\\HLS\\code\\exp3\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.5.1+cpu",
+    "torchvision": "0.20.1+cpu",
+    "numpy": "2.1.3",
+    "Pillow": "11.0.0",
+    "pyserial": "3.5",
+    "pytest": "8.3.5",
+    "ruff": "0.11.13"
+  },
+  "vivado": "2018.3",
+  "vivado_bin": "D:/HLS/software/Xilinx/Vivado/2018.3/bin",
+  "original_requirement_hashes": {
+    "docs/03-实验三/AI交互日志模板.docx": "0f376836ce234267e9fd36bbd8760750c7d3d2a9d08efd35e6589e77b8106428",
+    "docs/03-实验三/实验3-手写数字识别的AI部署（探索性）.docx": "eb908a30e7e005657e38f4fdd2255db75a2125aeaa602a5efdd09867c0fe1581",
+    "docs/03-实验三/效果演示-手写数字识别.mp4": "05446ebf264a780986f8d7eb6e2ea24edb9c0b3931dba0f0bf22bb710bcb19fe",
+    "docs/03-实验三/硬件连接实拍图.jpg": "c90f045f8657d5a360e755df2a3cafb2c0b4eff037a39f572f35bacc6e714491",
+    "docs/05-考核/AI使用声明模板.docx": "3edfd7b31a5c0765d15775576915f30b12a70eb400c5c64bb3e52029b2c2ffa7",
+    "docs/05-考核/实验报告模板.docx": "ff0f7b79a9fd19e46208693ce00588aa3148dc33dcdd4d5396bfa9d0729cc919",
+    "docs/05-考核/验收记录表.docx": "162a3e40c8968b6ff06655217a72a1e63bfb2558823e60fbdebfdf684582f44d"
+  },
+  "board_access_performed": false
+}

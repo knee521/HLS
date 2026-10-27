@@ -1,0 +1,51 @@
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source scripts/create_vivado.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set configuration [expr {$argc > 0 ? [lindex $argv 0] : "baseline"}]
+# switch -- $configuration {
+#     baseline { set top exp3_top; set baud 115200 }
+#     medium { set top exp3_top; set baud 230400 }
+#     fast { set top exp3_top; set baud 460800 }
+#     bringup { set top bringup_top; set baud 115200 }
+#     default { error "Configuration must be baseline, medium, fast or bringup" }
+# }
+# set rightmost [expr {$argc > 1 ? [lindex $argv 1] : 0}]
+# if {![string is integer -strict $rightmost] || $rightmost < 0 || $rightmost > 5} {
+#     error "Rightmost digit index must be 0..5"
+# }
+# set work [file join $root build vivado_$configuration]
+# set evidence [file join $root evidence implementation $configuration]
+# file mkdir $work
+# file mkdir $evidence
+# cd $work
+# set_param general.maxThreads 4
+# create_project -force exp3_$configuration $work -part xc7a35tfgg484-2
+# add_files [glob [file join $root rtl *.v]]
+# if {$top eq "exp3_top"} {
+#     set hls [file join $root build hls_baseline solution1 syn verilog]
+#     add_files [glob [file join $hls *.v]]
+#     foreach data [glob -nocomplain [file join $hls *.dat]] {
+#         add_files $data
+#         file copy -force $data $work
+#     }
+# }
+# add_files -fileset constrs_1 [file join $root constraints exp3.xdc]
+# set_property top $top [current_fileset]
+# synth_design -top $top -part xc7a35tfgg484-2 -generic [list BAUD=$baud RIGHTMOST_INDEX=$rightmost]
+Command: synth_design -top exp3_top -part xc7a35tfgg484-2 -generic {BAUD=230400 RIGHTMOST_INDEX=0}
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 43468 
+couldn't read file "D:/HLS/software/Xilinx/Vivado/2018.3/scripts/rt/data/unimacro/unimacro_verilog.tcl": No error
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 27 00:36:50 2026...

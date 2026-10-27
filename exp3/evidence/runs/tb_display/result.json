@@ -1,0 +1,16 @@
+{
+  "command": [
+    "D:/HLS/software/Xilinx/Vivado/2018.3/bin/vivado.bat",
+    "-mode",
+    "batch",
+    "-source",
+    "scripts/run_rtl_tests.tcl",
+    "-tclargs",
+    "tb_display"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3",
+  "started_utc": "2026-10-27T01:47:50.846717+00:00",
+  "native_exit_code": 0,
+  "exit_code": 0,
+  "elapsed_s": 8.47020280000288
+}

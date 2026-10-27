@@ -1,0 +1,11 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "train.export_quant"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3",
+  "started_utc": "2026-10-26T16:01:19.059310+00:00",
+  "exit_code": 0,
+  "elapsed_s": 2.5554016000241973
+}

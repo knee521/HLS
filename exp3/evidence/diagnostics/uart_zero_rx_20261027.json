@@ -1,0 +1,18 @@
+{
+  "observed_result": {
+    "port": "COM7",
+    "baud": 115200,
+    "bytes_sent": 2560,
+    "bytes_received": 0,
+    "passed": false,
+    "elapsed_ms": 2005.1558999693953
+  },
+  "port_device": "USB-SERIAL CH340, VID 1A86 PID 7523",
+  "user_connection": "USB cable directly to board USB-UART",
+  "user_firmware_state": "no longer cycling bringup; other firmware downloaded or board power-cycled",
+  "schematic_check": "U5 receives CH340 TXD; T6 drives CH340 RXD; XDC matches",
+  "next_step": "user reloads current release/bringup/exp3.bit, confirms 25-second diagnostic cycle, reruns echo_test at COM7 115200 without power-cycling or loading another bitstream",
+  "diagnosis_status": "required firmware precondition absent; UART defect not established",
+  "agent_opened_serial_port": false,
+  "agent_programmed_hardware": false
+}

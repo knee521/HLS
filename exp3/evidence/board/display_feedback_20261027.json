@@ -1,0 +1,18 @@
+{
+  "source": "user report in chat",
+  "port": "COM7",
+  "loaded_configuration_reported": "bringup",
+  "symptom": "Only digit 4 displays correctly; other digits are garbled",
+  "diagnosis": "RTL segment bit order is reversed relative to schematic nets",
+  "old_contract_test": {
+    "passed": 1,
+    "failed": 9,
+    "only_passing_digit": 4
+  },
+  "corrected_contract_test": {
+    "passed": 10,
+    "failed": 0
+  },
+  "physical_retest_after_fix": "user confirmed display is now normal",
+  "agent_programmed_hardware": false
+}

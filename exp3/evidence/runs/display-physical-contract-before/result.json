@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_display_contract.py",
+    "-q"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3",
+  "started_utc": "2026-10-27T01:46:44.399120+00:00",
+  "native_exit_code": 1,
+  "exit_code": 1,
+  "elapsed_s": 0.4349211999797262
+}

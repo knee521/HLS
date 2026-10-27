@@ -1,0 +1,93 @@
+{
+  "fw1": 6,
+  "fw2": 6,
+  "fh": 4,
+  "shift": 10,
+  "input_scale": "1/256",
+  "weight_layout": "output,input",
+  "weight_bits": 8,
+  "accumulator_bits": 32,
+  "activation_bits": 8,
+  "rounding": "nearest_ties_away_from_zero",
+  "activation_saturation": [
+    0,
+    255
+  ],
+  "model_sha256": "d8a43eb8aac05e72044eb99dd6eb7a085a4bf619fe7d5575b0438903cafd6320",
+  "weights_sha256": "08806e9804459ecc424f4fb2390f0cc370d010a7237a9d87fa84c2668a738a4b",
+  "quantized_sha256": "efb71f8b35c56d2b7730576764442621fb144a23f8a70c52b62a1ff1d0666cd4",
+  "split_sha256": "d874a337b1a85090a718399fc1c40c01cab9eb167d94c093c429ce77446e91da",
+  "calibration_count": 6000,
+  "calibration_hmax": 25.140642166137695,
+  "selection_data": "validation_only",
+  "trials": [
+    {
+      "fh": 2,
+      "validation_accuracy": 0.9574,
+      "saturated": 0,
+      "saturation_fraction": 0.0
+    },
+    {
+      "fh": 3,
+      "validation_accuracy": 0.9578,
+      "saturated": 0,
+      "saturation_fraction": 0.0
+    },
+    {
+      "fh": 4,
+      "validation_accuracy": 0.9582,
+      "saturated": 198,
+      "saturation_fraction": 0.0012375
+    }
+  ],
+  "bounds": {
+    "layer1_bounds": [
+      2082561,
+      1916308,
+      1812812,
+      2177440,
+      1926109,
+      1781603,
+      1946247,
+      1739467,
+      218096,
+      1860884,
+      2067855,
+      2117640,
+      1997537,
+      1822889,
+      2064146,
+      232841,
+      1962075,
+      2047308,
+      1876970,
+      1993805,
+      1935223,
+      2245808,
+      1953020,
+      2037589,
+      2009359,
+      1805300,
+      2033864,
+      2116730,
+      2210598,
+      1939450,
+      1797594,
+      1828756
+    ],
+    "layer2_bounds": [
+      179626,
+      163410,
+      180096,
+      140101,
+      207348,
+      167039,
+      200180,
+      179644,
+      159942,
+      157657
+    ],
+    "int32_max": 2147483647,
+    "safe_for_all_uint8_inputs": true
+  }
+}

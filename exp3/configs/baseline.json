@@ -1,0 +1,28 @@
+{
+  "config_id": "baseline-v1",
+  "part": "xc7a35tfgg484-2",
+  "clock_hz": 50000000,
+  "clock_period_ns": 20,
+  "network": [784, 32, 10],
+  "seed": 2026,
+  "train_size": 55000,
+  "validation_size": 5000,
+  "calibration_size": 6000,
+  "epochs": 20,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "cpu_threads": 4,
+  "input_fraction_bits": 8,
+  "float_accuracy_min": 0.96,
+  "fixed_accuracy_min": 0.95,
+  "relative_accuracy_loss_max": 0.01,
+  "absolute_accuracy_loss_max": 0.01,
+  "dsp_max": 60,
+  "latency_cycles_max": 250000,
+  "baud": 115200,
+  "request_timeout_s": 0.5,
+  "recovery_wait_s": 0.3,
+  "rightmost_index": 0,
+  "rightmost_index_verified_on_board": false
+}
+

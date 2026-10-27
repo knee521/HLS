@@ -1,0 +1,40 @@
+[
+  {
+    "file": "report\\实验三实验报告.docx",
+    "reference": "docs\\05-考核\\实验报告模板.docx",
+    "template_sha256": "ff0f7b79a9fd19e46208693ce00588aa3148dc33dcdd4d5396bfa9d0729cc919",
+    "changed_parts": [
+      "word/_rels/document.xml.rels",
+      "word/document.xml",
+      "[Content_Types].xml"
+    ],
+    "docx_sha256": "c1520abce7bf9d6936473ec3e105195697e90bd15e8e03726070c858aa0a37c9"
+  },
+  {
+    "file": "report\\AI交互日志.docx",
+    "reference": "docs\\03-实验三\\AI交互日志模板.docx",
+    "template_sha256": "0f376836ce234267e9fd36bbd8760750c7d3d2a9d08efd35e6589e77b8106428",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "docx_sha256": "6fecebf89df758c42c963757b063fd35fdee3d0e5abce7505bb8af9f82f87229"
+  },
+  {
+    "file": "report\\AI使用声明.docx",
+    "reference": "docs\\05-考核\\AI使用声明模板.docx",
+    "template_sha256": "3edfd7b31a5c0765d15775576915f30b12a70eb400c5c64bb3e52029b2c2ffa7",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "docx_sha256": "b0f2a8efdc6d908152f7a570a3fbc3f52b82bdc9bbe893ef8ad3de9378b339b9"
+  },
+  {
+    "file": "report\\实验三验收记录表.docx",
+    "reference": "docs\\05-考核\\验收记录表.docx",
+    "template_sha256": "162a3e40c8968b6ff06655217a72a1e63bfb2558823e60fbdebfdf684582f44d",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "docx_sha256": "a14ce2c49f3c6b15672f6e859e92128a57046c4a06e230650299e05f07ae8fa9"
+  }
+]

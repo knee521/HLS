@@ -1,0 +1,42 @@
+{
+  "port": "COM7",
+  "display": "user confirmed normal after segment-order fix",
+  "echo": {
+    "passed": true,
+    "bytes": 2560,
+    "baud": 115200,
+    "evidence_dir": "evidence\\board\\echo_20261027_100847_192649",
+    "saved_bytes_verified": true
+  },
+  "physical_rightmost_index": "not explicitly confirmed",
+  "mnist_100_image_comparison": {
+    "status": "passed_user_operated_saved_csv_verified",
+    "evidence": "evidence\\timing\\board_20261027_101021_105065",
+    "requests": 100,
+    "successes": 100,
+    "failures": 0,
+    "success_fraction": 1.0,
+    "accuracy_successful_labeled": 1.0,
+    "reference_mismatches": 0,
+    "mean_ms": 72.40792,
+    "median_ms": 72.4034,
+    "p95_ms": 72.5151,
+    "min_ms": 72.1651,
+    "max_ms": 72.8033,
+    "latency_population": "successful transactions only; failures counted separately"
+  },
+  "handwriting": {
+    "status": "partial_unlabeled",
+    "total_requests": 16,
+    "successful_requests": 13,
+    "failed_requests": 3,
+    "labeled_requests": 0,
+    "accuracy": null
+  },
+  "fault_injection": "pending",
+  "performance_comparison": "pending",
+  "stability_1000_frames": "pending",
+  "teacher_acceptance": "pending",
+  "hardware_operator": "user",
+  "echo_time_is_inference_time": false
+}

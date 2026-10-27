@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-27T02:07:24.773996+00:00",
+  "configuration": "medium",
+  "top": "exp3_top",
+  "baud": 230400,
+  "rightmost_index": 0,
+  "wns_ns": 2.417,
+  "hold_slack_ns": 0.059,
+  "dsp": 2,
+  "hardware_tested": false,
+  "lut": 551.0,
+  "ff": 627.0,
+  "bram36": 9.5,
+  "part": "xc7a35tfgg484-2",
+  "clock_hz": 50000000,
+  "model_sha256": "d8a43eb8aac05e72044eb99dd6eb7a085a4bf619fe7d5575b0438903cafd6320",
+  "weights_sha256": "08806e9804459ecc424f4fb2390f0cc370d010a7237a9d87fa84c2668a738a4b",
+  "bit_sha256": "bf5d0d1236627d7e656b1af75e2f07091aab77ada1d7af16e7c45820b1936c50",
+  "source_manifest_sha256": "1b9ecdbc069b0f4232ac4c608954c3ed7d0fce01a4a984af14839c8424605452",
+  "rightmost_index_verified_on_board": false,
+  "status": "awaiting_user_hardware_validation"
+}

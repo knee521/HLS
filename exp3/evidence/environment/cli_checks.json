@@ -1,0 +1,42 @@
+[
+  {
+    "module": "host.gui",
+    "exit_code": 0
+  },
+  {
+    "module": "host.send_dataset",
+    "exit_code": 0
+  },
+  {
+    "module": "host.fault_inject",
+    "exit_code": 0
+  },
+  {
+    "module": "host.echo_test",
+    "exit_code": 0
+  },
+  {
+    "module": "host.compare_timing",
+    "exit_code": 0
+  },
+  {
+    "module": "train.train_mlp",
+    "exit_code": 0
+  },
+  {
+    "module": "train.export_quant",
+    "exit_code": 0
+  },
+  {
+    "module": "train.evaluate",
+    "exit_code": 0
+  },
+  {
+    "module": "scripts.build",
+    "exit_code": 0
+  },
+  {
+    "module": "scripts.finalize_release",
+    "exit_code": 0
+  }
+]

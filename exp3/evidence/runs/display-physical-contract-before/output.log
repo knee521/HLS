@@ -1,0 +1,264 @@
+FFFF.FFFFF                                                               [100%]
+================================== FAILURES ===================================
+____________ test_digit_lights_correct_physical_segments[0-abcdef] ____________
+
+digit = 0, shape = 'abcdef'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=0, physical lit={'c', 'd', 'g', 'f', 'dp', 'e'}, expected={'a', 'c', 'd', 'f', 'e', 'b'}
+E       assert {'c', 'd', 'd...'e', 'f', 'g'} == {'a', 'b', 'c', 'd', 'e', 'f'}
+E         
+E         Extra items in the left set:
+E         'dp'
+E         'g'
+E         Extra items in the right set:
+E         'a'
+E         'b'
+E         Use -v to get more diff
+
+tests\test_display_contract.py:29: AssertionError
+______________ test_digit_lights_correct_physical_segments[1-bc] ______________
+
+digit = 1, shape = 'bc'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=1, physical lit={'f', 'g'}, expected={'c', 'b'}
+E       assert {'f', 'g'} == {'b', 'c'}
+E         
+E         Extra items in the left set:
+E         'f'
+E         'g'
+E         Extra items in the right set:
+E         'c'
+E         'b'
+E         Use -v to get more diff
+
+tests\test_display_contract.py:29: AssertionError
+____________ test_digit_lights_correct_physical_segments[2-abdeg] _____________
+
+digit = 2, shape = 'abdeg'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=2, physical lit={'d', 'g', 'dp', 'e', 'b'}, expected={'a', 'd', 'g', 'e', 'b'}
+E       assert {'b', 'd', 'dp', 'e', 'g'} == {'a', 'b', 'd', 'e', 'g'}
+E         
+E         Extra items in the left set:
+E         'dp'
+E         Extra items in the right set:
+E         'a'
+E         Use -v to get more diff
+
+tests\test_display_contract.py:29: AssertionError
+____________ test_digit_lights_correct_physical_segments[3-abcdg] _____________
+
+digit = 3, shape = 'abcdg'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=3, physical lit={'g', 'f', 'dp', 'e', 'b'}, expected={'a', 'c', 'd', 'g', 'b'}
+E       assert {'b', 'dp', 'e', 'f', 'g'} == {'a', 'b', 'c', 'd', 'g'}
+E         
+E         Extra items in the left set:
+E         'f'
+E         'e'
+E         'dp'
+E         Extra items in the right set:
+E         'a'...
+E         
+E         ...Full output truncated (3 lines hidden), use '-vv' to show
+
+tests\test_display_contract.py:29: AssertionError
+____________ test_digit_lights_correct_physical_segments[5-acdfg] _____________
+
+digit = 5, shape = 'acdfg'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=5, physical lit={'c', 'f', 'dp', 'e', 'b'}, expected={'a', 'c', 'd', 'g', 'f'}
+E       assert {'b', 'c', 'dp', 'e', 'f'} == {'a', 'c', 'd', 'f', 'g'}
+E         
+E         Extra items in the left set:
+E         'dp'
+E         'e'
+E         'b'
+E         Extra items in the right set:
+E         'a'...
+E         
+E         ...Full output truncated (3 lines hidden), use '-vv' to show
+
+tests\test_display_contract.py:29: AssertionError
+____________ test_digit_lights_correct_physical_segments[6-acdefg] ____________
+
+digit = 6, shape = 'acdefg'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=6, physical lit={'c', 'd', 'f', 'dp', 'e', 'b'}, expected={'a', 'c', 'd', 'g', 'f', 'e'}
+E       assert {'b', 'c', 'd...dp', 'e', 'f'} == {'a', 'c', 'd', 'e', 'f', 'g'}
+E         
+E         Extra items in the left set:
+E         'dp'
+E         'b'
+E         Extra items in the right set:
+E         'a'
+E         'g'
+E         Use -v to get more diff
+
+tests\test_display_contract.py:29: AssertionError
+_____________ test_digit_lights_correct_physical_segments[7-abc] ______________
+
+digit = 7, shape = 'abc'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=7, physical lit={'f', 'dp', 'g'}, expected={'a', 'c', 'b'}
+E       assert {'dp', 'f', 'g'} == {'a', 'b', 'c'}
+E         
+E         Extra items in the left set:
+E         'f'
+E         'g'
+E         'dp'
+E         Extra items in the right set:
+E         'a'...
+E         
+E         ...Full output truncated (3 lines hidden), use '-vv' to show
+
+tests\test_display_contract.py:29: AssertionError
+___________ test_digit_lights_correct_physical_segments[8-abcdefg] ____________
+
+digit = 8, shape = 'abcdefg'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=8, physical lit={'c', 'd', 'g', 'f', 'dp', 'e', 'b'}, expected={'a', 'c', 'd', 'g', 'f', 'e', 'b'}
+E       assert {'b', 'c', 'd...'e', 'f', ...} == {'a', 'b', 'c...'e', 'f', ...}
+E         
+E         Extra items in the left set:
+E         'dp'
+E         Extra items in the right set:
+E         'a'
+E         Use -v to get more diff
+
+tests\test_display_contract.py:29: AssertionError
+____________ test_digit_lights_correct_physical_segments[9-abcdfg] ____________
+
+digit = 9, shape = 'abcdfg'
+
+    @pytest.mark.parametrize("digit,shape", enumerate(DIGIT_SHAPE))
+    def test_digit_lights_correct_physical_segments(digit: int, shape: str) -> None:
+        rtl = (ROOT / "rtl/seven_segment.v").read_text(encoding="utf-8")
+        xdc = (ROOT / "constraints/exp3.xdc").read_text(encoding="utf-8")
+        codes = {int(d): int(code, 16) for d, code in
+                 re.findall(r"(\d+):\s*segments=8'h([0-9a-fA-F]+)", rtl)}
+        mapping = re.findall(
+            r"PACKAGE_PIN\s+(\w+)\s+IOSTANDARD LVCMOS33\} \[get_ports \{seg_led\[(\d)\]\}\]", xdc
+        )
+        assert len(mapping) == 8
+        lit = {PIN_SEGMENT[pin] for pin, bit in mapping if not (codes[digit] >> int(bit)) & 1}
+>       assert lit == set(shape), f"digit={digit}, physical lit={lit}, expected={set(shape)}"
+E       AssertionError: digit=9, physical lit={'c', 'g', 'f', 'dp', 'e', 'b'}, expected={'a', 'c', 'd', 'g', 'f', 'b'}
+E       assert {'b', 'c', 'd...'e', 'f', 'g'} == {'a', 'b', 'c', 'd', 'f', 'g'}
+E         
+E         Extra items in the left set:
+E         'dp'
+E         'e'
+E         Extra items in the right set:
+E         'a'
+E         'd'
+E         Use -v to get more diff
+
+tests\test_display_contract.py:29: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[0-abcdef]
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[1-bc]
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[2-abdeg]
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[3-abcdg]
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[5-acdfg]
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[6-acdefg]
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[7-abc]
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[8-abcdefg]
+FAILED tests/test_display_contract.py::test_digit_lights_correct_physical_segments[9-abcdfg]
+9 failed, 1 passed in 0.11s

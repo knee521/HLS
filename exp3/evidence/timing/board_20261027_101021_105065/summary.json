@@ -1,0 +1,14 @@
+{
+  "requests": 100,
+  "successes": 100,
+  "failures": 0,
+  "success_fraction": 1.0,
+  "accuracy_successful_labeled": 1.0,
+  "reference_mismatches": 0,
+  "mean_ms": 72.40792,
+  "median_ms": 72.4034,
+  "p95_ms": 72.5151,
+  "min_ms": 72.1651,
+  "max_ms": 72.8033,
+  "latency_population": "successful transactions only; failures counted separately"
+}

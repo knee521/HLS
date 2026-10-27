@@ -1,0 +1,13 @@
+{
+  "command": [
+    "D:\\HLS\\code\\exp3\\.venv\\Scripts\\python.exe",
+    "-m",
+    "host.gui",
+    "--smoke-test"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3",
+  "started_utc": "2026-10-27T02:05:58.203536+00:00",
+  "native_exit_code": 0,
+  "exit_code": 0,
+  "elapsed_s": 0.4314523999928497
+}

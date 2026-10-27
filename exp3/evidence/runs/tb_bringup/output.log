@@ -1,0 +1,90 @@
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source scripts/run_rtl_tests.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set test [expr {$argc > 0 ? [lindex $argv 0] : "tb_uart"}]
+# if {![regexp {^tb_[a-z0-9_]+$} $test]} { error "Invalid test identifier" }
+# set work [file join $root build simulation $test]
+# file mkdir $work
+# cd $work
+# set bin [file dirname [info nameofexecutable]]
+# set bin "D:/HLS/software/Xilinx/Vivado/2018.3/bin"
+# set sources [glob [file join $root rtl *.v]]
+# if {$test in {tb_system tb_watchdog}} {
+#     set hls [file join $root build hls_baseline solution1 syn verilog]
+#     set sources [concat $sources [glob [file join $hls *.v]]]
+#     foreach file [glob -nocomplain [file join $hls *.dat]] { file copy -force $file $work }
+#     foreach file [glob [file join $root data vectors *.hex]] { file copy -force $file $work }
+# }
+# set tb [file join $root sim ${test}.sv]
+# set output [exec [file join $bin xvlog.bat] --sv {*}$sources $tb 2>@1]
+# puts $output
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/bringup_top.v" into library work
+INFO: [VRFC 10-311] analyzing module bringup_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/crc16_byte.v" into library work
+INFO: [VRFC 10-311] analyzing module crc16_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/exp3_top.v" into library work
+INFO: [VRFC 10-311] analyzing module exp3_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/frame_parser.v" into library work
+INFO: [VRFC 10-311] analyzing module frame_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/reset_sync.v" into library work
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/response_builder.v" into library work
+INFO: [VRFC 10-311] analyzing module response_builder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/uart_rx.v" into library work
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/uart_tx.v" into library work
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/sim/tb_bringup.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_bringup
+# set output [exec [file join $bin xelab.bat] $test -s ${test}_snapshot -debug typical 2>@1]
+# puts $output
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/HLS/software/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe tb_bringup -s tb_bringup_snapshot -debug typical 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.reset_sync
+Compiling module work.uart_rx_default
+Compiling module work.uart_tx_default
+Compiling module work.seven_segment(DIAGNOSTIC=1)
+Compiling module work.bringup_top_default
+Compiling module work.tb_bringup
+Built simulation snapshot tb_bringup_snapshot
+# set output [exec [file join $bin xsim.bat] ${test}_snapshot -runall 2>@1]
+# puts $output
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_bringup_snapshot/xsim_script.tcl
+# xsim {tb_bringup_snapshot} -autoloadwcfg -runall
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run -all
+ECHO_BURST bit_ns=8681 rx=2560 echo=2560 mismatch=0 errors=0 high_water=1 overflow=0
+ECHO_BURST bit_ns=8605 rx=2560 echo=2560 mismatch=0 errors=0 high_water=23 overflow=0
+ECHO_BURST bit_ns=8510 rx=2560 echo=2560 mismatch=0 errors=0 high_water=51 overflow=0
+ECHO_BURST bit_ns=8854 rx=2560 echo=2560 mismatch=0 errors=0 high_water=1 overflow=0
+TEST_PASS tb_bringup 4x2560_bytes_independent_baud_plus_minus_2pct
+$finish called at time : 1007041687 ns : File "D:/HLS/code/exp3/sim/tb_bringup.sv" Line 54
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:40 . Memory (MB): peak = 218.227 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Oct 27 10:06:47 2026...
+# if {[string first "TEST_PASS $test" $output] < 0 || [string first "Fatal:" $output] >= 0} {
+#     error "Simulation did not meet its assertions"
+# }
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 27 10:06:47 2026...

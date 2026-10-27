@@ -1,0 +1,160 @@
+{
+  "snapshot_date": "2026-10-27",
+  "hardware_operator": "user",
+  "serial_access_by_audit": false,
+  "dataset_path": "evidence\\timing\\board_20261027_101021_105065",
+  "dataset_summary": {
+    "requests": 100,
+    "successes": 100,
+    "failures": 0,
+    "success_fraction": 1.0,
+    "accuracy_successful_labeled": 1.0,
+    "reference_mismatches": 0,
+    "mean_ms": 72.40792,
+    "median_ms": 72.4034,
+    "p95_ms": 72.5151,
+    "min_ms": 72.1651,
+    "max_ms": 72.8033,
+    "latency_population": "successful transactions only; failures counted separately"
+  },
+  "warmup_summary": {
+    "requests": 10,
+    "successes": 10,
+    "failures": 0,
+    "success_fraction": 1.0,
+    "accuracy_successful_labeled": null,
+    "reference_mismatches": 0,
+    "mean_ms": 72.361,
+    "median_ms": 72.3609,
+    "p95_ms": 72.4935,
+    "min_ms": 72.1958,
+    "max_ms": 72.4935,
+    "latency_population": "successful transactions only; failures counted separately"
+  },
+  "cycles": [
+    26365
+  ],
+  "model_and_release_hashes_verified": true,
+  "bit_identity_is_device_readback": false,
+  "handwriting_sessions": [
+    {
+      "path": "evidence\\board\\handwriting_20261027_094739_872991\\transactions.csv",
+      "summary": {
+        "requests": 1,
+        "successes": 0,
+        "failures": 1,
+        "success_fraction": 0.0,
+        "accuracy_successful_labeled": null,
+        "reference_mismatches": 0,
+        "mean_ms": null,
+        "median_ms": null,
+        "p95_ms": null,
+        "min_ms": null,
+        "max_ms": null,
+        "latency_population": "successful transactions only; failures counted separately"
+      },
+      "labeled": 0,
+      "bit_identity": [
+        "unknown"
+      ]
+    },
+    {
+      "path": "evidence\\board\\handwriting_20261027_100326_932521\\transactions.csv",
+      "summary": {
+        "requests": 1,
+        "successes": 0,
+        "failures": 1,
+        "success_fraction": 0.0,
+        "accuracy_successful_labeled": null,
+        "reference_mismatches": 0,
+        "mean_ms": null,
+        "median_ms": null,
+        "p95_ms": null,
+        "min_ms": null,
+        "max_ms": null,
+        "latency_population": "successful transactions only; failures counted separately"
+      },
+      "labeled": 0,
+      "bit_identity": [
+        "unknown"
+      ]
+    },
+    {
+      "path": "evidence\\board\\handwriting_20261027_100506_617208\\transactions.csv",
+      "summary": {
+        "requests": 1,
+        "successes": 0,
+        "failures": 1,
+        "success_fraction": 0.0,
+        "accuracy_successful_labeled": null,
+        "reference_mismatches": 0,
+        "mean_ms": null,
+        "median_ms": null,
+        "p95_ms": null,
+        "min_ms": null,
+        "max_ms": null,
+        "latency_population": "successful transactions only; failures counted separately"
+      },
+      "labeled": 0,
+      "bit_identity": [
+        "unknown"
+      ]
+    },
+    {
+      "path": "evidence\\board\\handwriting_20261027_101102_851121\\transactions.csv",
+      "summary": {
+        "requests": 9,
+        "successes": 9,
+        "failures": 0,
+        "success_fraction": 1.0,
+        "accuracy_successful_labeled": null,
+        "reference_mismatches": 0,
+        "mean_ms": 72.42384444444444,
+        "median_ms": 72.4067,
+        "p95_ms": 72.5201,
+        "min_ms": 72.3188,
+        "max_ms": 72.5201,
+        "latency_population": "successful transactions only; failures counted separately"
+      },
+      "labeled": 0,
+      "bit_identity": [
+        "unknown"
+      ]
+    },
+    {
+      "path": "evidence\\board\\handwriting_20261027_101306_983840\\transactions.csv",
+      "summary": {
+        "requests": 4,
+        "successes": 4,
+        "failures": 0,
+        "success_fraction": 1.0,
+        "accuracy_successful_labeled": null,
+        "reference_mismatches": 0,
+        "mean_ms": 72.46355,
+        "median_ms": 72.47625,
+        "p95_ms": 72.4948,
+        "min_ms": 72.4069,
+        "max_ms": 72.4948,
+        "latency_population": "successful transactions only; failures counted separately"
+      },
+      "labeled": 0,
+      "bit_identity": [
+        "unknown"
+      ]
+    }
+  ],
+  "handwriting_accuracy": null,
+  "limitations": [
+    "No handwriting labels",
+    "No physical rightmost confirmation",
+    "No comparative baud board runs",
+    "No teacher acceptance"
+  ],
+  "source_sha256": {
+    "evidence\\timing\\board_20261027_101021_105065\\transactions.csv": "1f72a03011944c518b98363caeae2530fad13617b14fb3c3889707e741a49d74",
+    "evidence\\timing\\board_20261027_101021_105065\\warmup.csv": "ae0cb99247da15fbd88e4c46d14ac877c04ca86ef3ef8550a9cdf6491c2c16bd",
+    "evidence\\timing\\board_20261027_101021_105065\\summary.json": "90ad826ba39685e9d6033557977e3cd6dd71e3b0587d1a9d1619ae29e1356e84",
+    "evidence\\board\\echo_20261027_100847_192649\\sent.bin": "e392378f849d67bbb1a7bbec84f1098ae3faa751049c009a850130ce6073d91a",
+    "evidence\\board\\echo_20261027_100847_192649\\received.bin": "e392378f849d67bbb1a7bbec84f1098ae3faa751049c009a850130ce6073d91a"
+  }
+}

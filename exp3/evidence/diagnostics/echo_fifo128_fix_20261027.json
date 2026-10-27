@@ -1,0 +1,24 @@
+{
+  "user_received": 2553,
+  "user_leds": "all four continuously on",
+  "old_fifo_depth": 16,
+  "new_fifo_depth": 128,
+  "reproduced_old_echo_count": 2553,
+  "reproduction_bit_period_ns": 8605,
+  "physical_bit_period_measured": false,
+  "test_periods_ns": [
+    8681,
+    8605,
+    8510,
+    8854
+  ],
+  "bytes_per_test": 2560,
+  "regression": "4 bursts passed byte-exact, no framing errors or overflow",
+  "bringup_bit_sha256": "50f0b8c1858c9fef8c640b48bb3a855111a23d99d98381e92919685acfa6e409",
+  "hardware_retest": "passed_user_operated_verified_saved_bytes",
+  "agent_accessed_board": false,
+  "hardware_evidence_dir": "evidence\\board\\echo_20261027_100847_192649",
+  "echo_elapsed_ms": 222.9001999949105,
+  "sent_sha256": "e392378f849d67bbb1a7bbec84f1098ae3faa751049c009a850130ce6073d91a",
+  "received_sha256": "e392378f849d67bbb1a7bbec84f1098ae3faa751049c009a850130ce6073d91a"
+}

@@ -1,0 +1,9 @@
+{
+  "variant": "baseline",
+  "csim": "passed",
+  "cosim": "passed",
+  "synthesis": "passed",
+  "ip_packaging": "passed_with_project_local_revision_fix",
+  "source_sha256": "2bb55e4b894cf086801dd96ae107a0ce2c5f4b7bba454d4c164d61445bac0f91",
+  "weights_sha256": "08806e9804459ecc424f4fb2390f0cc370d010a7237a9d87fa84c2668a738a4b"
+}

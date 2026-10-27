@@ -1,0 +1,16 @@
+{
+  "command": [
+    "D:\\HLS\\software\\Xilinx\\Vivado\\2018.3\\bin\\vivado.bat",
+    "-mode",
+    "batch",
+    "-source",
+    "scripts/create_vivado.tcl",
+    "-tclargs",
+    "baseline"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3",
+  "started_utc": "2026-10-26T16:11:31.411583+00:00",
+  "native_exit_code": 0,
+  "exit_code": 0,
+  "elapsed_s": 46.64207569998689
+}

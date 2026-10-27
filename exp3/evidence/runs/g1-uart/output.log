@@ -1,0 +1,39 @@
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source scripts/run_rtl_tests.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set test [expr {$argc > 0 ? [lindex $argv 0] : "tb_uart"}]
+# if {![regexp {^tb_[a-z0-9_]+$} $test]} { error "Invalid test identifier" }
+# set work [file join $root build simulation $test]
+# file mkdir $work
+# cd $work
+# set bin [file dirname [info nameofexecutable]]
+# set bin "D:/HLS/software/Xilinx/Vivado/2018.3/bin"
+# set sources [glob [file join $root rtl *.v]]
+# set tb [file join $root sim ${test}.sv]
+# set output [exec [file join $bin xvlog.bat] --sv {*}$sources $tb 2>@1]
+# puts $output
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/reset_sync.v" into library work
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/seven_segment.v" into library work
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/uart_rx.v" into library work
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/rtl/uart_tx.v" into library work
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/sim/tb_uart.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_uart
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/HLS/software/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe tb_uart -s tb_uart_snapshot -debug typical 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+ERROR: [XSIM 43-4099] "D:/HLS/code/exp3/rtl/uart_tx.v" Line 2. Module uart_tx_default doesn't have a timescale but at least one module in design has a timescale.
+child process exited abnormally
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 26 23:55:29 2026...

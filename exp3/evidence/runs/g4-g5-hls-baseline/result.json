@@ -1,0 +1,11 @@
+{
+  "command": [
+    "D:\\HLS\\software\\Xilinx\\Vivado\\2018.3\\bin\\vivado_hls.bat",
+    "-f",
+    "hls/run_hls.tcl"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3",
+  "started_utc": "2026-10-26T16:01:39.665896+00:00",
+  "exit_code": 0,
+  "elapsed_s": 1.271525499993004
+}

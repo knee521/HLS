@@ -1,0 +1,11 @@
+{
+  "reason": "HLS Y2K22 core_revision signed-integer overflow",
+  "reference": "https://docs.amd.com/r/en-US/76960",
+  "original_revision": "2610270019",
+  "replacement_revision": 1,
+  "scope": "project-local generated packaging metadata only",
+  "original_script_sha256": "19bc56f30552dc9bcfda7024106a97bd841ae92e481868d5439269a3778ba685",
+  "patched_script_sha256": "7f0557c695d8942437e042b199cc398552ab8333d007493ef66204fbc544aa04",
+  "archive": "build\\hls_serialized\\solution1\\impl\\ip\\xilinx_com_hls_nn_infer_1_0.zip",
+  "archive_sha256": "ec20e5dd6df58121620f98e50d12d2497b7d07769d752ff1aeaa8902525fe161"
+}

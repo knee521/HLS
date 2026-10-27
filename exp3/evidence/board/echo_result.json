@@ -1,0 +1,10 @@
+{
+  "port": "COM7",
+  "baud": 115200,
+  "bytes_sent": 2560,
+  "bytes_received": 2560,
+  "passed": true,
+  "elapsed_ms": 222.9001999949105,
+  "evidence_dir": "evidence\\board\\echo_20261027_100847_192649",
+  "first_mismatch_index": null
+}

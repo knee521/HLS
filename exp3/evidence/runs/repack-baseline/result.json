@@ -1,0 +1,14 @@
+{
+  "command": [
+    "D:\\HLS\\code\\exp3\\.venv\\Scripts\\python.exe",
+    "-m",
+    "scripts.repack_hls_ip",
+    "--variant",
+    "baseline"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3",
+  "started_utc": "2026-10-26T16:26:56.876876+00:00",
+  "native_exit_code": 0,
+  "exit_code": 0,
+  "elapsed_s": 3.719902299984824
+}

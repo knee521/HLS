@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-27",
+  "pages": {
+    "实验三实验报告": 8,
+    "AI交互日志": 4,
+    "AI使用声明": 1,
+    "实验三验收记录表": 2
+  },
+  "all_final_pages_visually_inspected": true,
+  "renderer": "Microsoft Word read-only PDF export and Poppler PNG; packaged renderer unavailable without LibreOffice",
+  "source_build_hashes_unchanged": 59,
+  "original_templates_unchanged": true,
+  "zip_xml_docx_open_and_pdf_checks": "passed",
+  "hardware_operations_performed_by_agent": false,
+  "board_audit": "evidence/board/report_audit_20261027.json",
+  "report_pdf_is_internal_qa_only": true
+}

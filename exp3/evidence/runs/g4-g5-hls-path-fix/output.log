@@ -1,0 +1,332 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/HLS/software/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/HLS/software/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'lenovo' on host 'laptop-1ipp8016' (Windows NT_amd64 version 6.2) on Tue Oct 27 00:02:15 +0800 2026
+INFO: [HLS 200-10] In directory 'D:/HLS/code/exp3'
+INFO: [HLS 200-10] Creating and opening project 'D:/HLS/code/exp3/build/hls_baseline'.
+INFO: [HLS 200-10] Adding design file 'D:/HLS/code/exp3/hls/nn_infer.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'D:/HLS/code/exp3/hls/nn_infer.h' to the project
+INFO: [HLS 200-10] Adding design file 'D:/HLS/code/exp3/hls/weights.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'D:/HLS/code/exp3/hls/tb_nn.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'D:/HLS/code/exp3/build/hls_baseline/solution1'.
+INFO: [HLS 200-10] Setting target device to 'xc7a35tfgg484-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../hls/tb_nn.cpp in debug mode
+   Compiling ../../../../../hls/nn_infer.cpp in debug mode
+   Generating csim.exe
+In file included from D:/HLS/software/Xilinx/Vivado/2018.3/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/hls_fpo.h:186,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/hls_half.h:44,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/etc/ap_private.h:90,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/ap_common.h:641,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/ap_int.h:54,
+                 from ../../../../../hls/nn_infer.h:3,
+                 from ../../../../../hls/tb_nn.cpp:1:
+D:/HLS/software/Xilinx/Vivado/2018.3/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/HLS/software/Xilinx/Vivado/2018.3/include/hls_fpo.h:186:0,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/hls_half.h:44,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/etc/ap_private.h:90,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/ap_common.h:641,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/ap_int.h:54,
+                 from ../../../../../hls/nn_infer.h:3,
+                 from ../../../../../hls/tb_nn.cpp:1:
+D:/HLS/software/Xilinx/Vivado/2018.3/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/HLS/software/Xilinx/Vivado/2018.3/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/hls_fpo.h:186,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/hls_half.h:44,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/etc/ap_private.h:90,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/ap_common.h:641,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/ap_int.h:54,
+                 from ../../../../../hls/nn_infer.h:3,
+                 from ../../../../../hls/nn_infer.cpp:1:
+D:/HLS/software/Xilinx/Vivado/2018.3/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/HLS/software/Xilinx/Vivado/2018.3/include/hls_fpo.h:186:0,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/hls_half.h:44,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/etc/ap_private.h:90,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/ap_common.h:641,
+                 from D:/HLS/software/Xilinx/Vivado/2018.3/include/ap_int.h:54,
+                 from ../../../../../hls/nn_infer.h:3,
+                 from ../../../../../hls/nn_infer.cpp:1:
+D:/HLS/software/Xilinx/Vivado/2018.3/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+C_TEST samples=10000 correct=9660 prediction_mismatches=0 score_mismatches=0
+TEST_PASS nn_infer mode=test
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'D:/HLS/code/exp3/hls/nn_infer.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:35 . Memory (MB): peak = 103.398 ; gain = 18.762
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:35 . Memory (MB): peak = 103.398 ; gain = 18.762
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 112.184 ; gain = 27.547
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 117.801 ; gain = 33.164
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 144.531 ; gain = 59.895
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'HIDDEN_NODE' (D:/HLS/code/exp3/hls/nn_infer.cpp:24:35) in function 'nn_infer' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'OUTPUT_NODE' (D:/HLS/code/exp3/hls/nn_infer.cpp:48:35) in function 'nn_infer' : 
+
+the outer loop is not a perfect loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:36 . Memory (MB): peak = 145.566 ; gain = 60.930
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nn_infer' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_infer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COPY_INPUT'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'HIDDEN_MAC'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'OUTPUT_MAC'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 35.677 seconds; current allocated memory: 96.993 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'pixels_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'hidden_V' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.058 seconds; current allocated memory: 97.518 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_infer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_infer/image_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nn_infer' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'nn_infer_mac_muladd_8s_8ns_26ns_26_1_1' to 'nn_infer_mac_mulabkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'nn_infer_mac_muladd_8s_8ns_21s_21_1_1' to 'nn_infer_mac_mulacud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'nn_infer_mac_mulabkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nn_infer_mac_mulacud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_infer'.
+INFO: [HLS 200-111]  Elapsed time: 0.095 seconds; current allocated memory: 98.350 MB.
+INFO: [RTMG 210-279] Implementing memory 'nn_infer_B1_V_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_infer_W1_V_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_infer_B2_V_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_infer_W2_V_rom' using block ROMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_infer_pixels_V_ram (RAM_1P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_infer_hidden_V_ram (RAM_1P_LUTRAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:38 . Memory (MB): peak = 154.445 ; gain = 69.809
+INFO: [SYSC 207-301] Generating SystemC RTL for nn_infer.
+INFO: [VHDL 208-304] Generating VHDL RTL for nn_infer.
+INFO: [VLOG 209-307] Generating Verilog RTL for nn_infer.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/HLS/software/Xilinx/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling tb_nn.cpp_pre.cpp.tb.cpp
+   Compiling nn_infer.cpp_pre.cpp.tb.cpp
+   Compiling apatb_nn_infer.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+C_TEST samples=24 correct=24 prediction_mismatches=0 score_mismatches=0
+TEST_PASS nn_infer mode=cosim
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\HLS\code\exp3\build\hls_baseline\solution1\sim\verilog>set PATH= 
+
+D:\HLS\code\exp3\build\hls_baseline\solution1\sim\verilog>call D:/HLS/software/Xilinx/Vivado/2018.3/bin/xelab xil_defaultlib.apatb_nn_infer_top glbl -prj nn_infer.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "D:/HLS/software/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s nn_infer -debug wave 
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/HLS/software/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/HLS/software/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_nn_infer_top glbl -prj nn_infer.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile D:/HLS/software/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s nn_infer -debug wave 
+Multi-threading is on. Using 22 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/AESL_automem_image_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_image_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_nn_infer_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer_B1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer_B1_V_rom
+INFO: [VRFC 10-311] analyzing module nn_infer_B1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer_B2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer_B2_V_rom
+INFO: [VRFC 10-311] analyzing module nn_infer_B2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer_hidden_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer_hidden_V_ram
+INFO: [VRFC 10-311] analyzing module nn_infer_hidden_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer_mac_mulabkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer_mac_mulabkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module nn_infer_mac_mulabkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer_mac_mulacud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer_mac_mulacud_DSP48_1
+INFO: [VRFC 10-311] analyzing module nn_infer_mac_mulacud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer_pixels_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer_pixels_V_ram
+INFO: [VRFC 10-311] analyzing module nn_infer_pixels_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer_W1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer_W1_V_rom
+INFO: [VRFC 10-311] analyzing module nn_infer_W1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer_W2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_infer_W2_V_rom
+INFO: [VRFC 10-311] analyzing module nn_infer_W2_V
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.nn_infer_B1_V_rom
+Compiling module xil_defaultlib.nn_infer_B1_V(DataWidth=14,Addre...
+Compiling module xil_defaultlib.nn_infer_W1_V_rom
+Compiling module xil_defaultlib.nn_infer_W1_V(DataWidth=8,Addres...
+Compiling module xil_defaultlib.nn_infer_B2_V_rom
+Compiling module xil_defaultlib.nn_infer_B2_V(DataWidth=11,Addre...
+Compiling module xil_defaultlib.nn_infer_W2_V_rom
+Compiling module xil_defaultlib.nn_infer_W2_V(DataWidth=8,Addres...
+Compiling module xil_defaultlib.nn_infer_pixels_V_ram
+Compiling module xil_defaultlib.nn_infer_pixels_V(DataWidth=8,Ad...
+Compiling module xil_defaultlib.nn_infer_hidden_V_ram
+Compiling module xil_defaultlib.nn_infer_hidden_V(DataWidth=8,Ad...
+Compiling module xil_defaultlib.nn_infer_mac_mulabkb_DSP48_0
+Compiling module xil_defaultlib.nn_infer_mac_mulabkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.nn_infer_mac_mulacud_DSP48_1
+Compiling module xil_defaultlib.nn_infer_mac_mulacud(ID=1,NUM_ST...
+Compiling module xil_defaultlib.nn_infer
+Compiling module xil_defaultlib.AESL_automem_image_V
+Compiling module xil_defaultlib.apatb_nn_infer_top
+Compiling module work.glbl
+Built simulation snapshot nn_infer
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/xsim.dir/nn_infer/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 27 00:03:17 2026...
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/nn_infer/xsim_script.tcl
+# xsim {nn_infer} -autoloadwcfg -tclbatch {nn_infer.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source nn_infer.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set agg_group [add_wave_group agg(wire) -into $coutputgroup]
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/ap_return -into $agg_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set image_group [add_wave_group image(memory) -into $cinputgroup]
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/image_V_q0 -into $image_group -radix hex
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/image_V_ce0 -into $image_group -color #ffff00 -radix hex
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/image_V_address0 -into $image_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/ap_start -into $blocksiggroup
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/ap_done -into $blocksiggroup
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/ap_idle -into $blocksiggroup
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_nn_infer_top/AESL_inst_nn_infer/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_nn_infer_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_nn_infer_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_nn_infer_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_nn_infer_top/LENGTH_image_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_nn_infer_top/LENGTH_ap_return -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_agg_group [add_wave_group agg(wire) -into $tbcoutputgroup]
+## add_wave /apatb_nn_infer_top/ap_return -into $tb_agg_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_image_group [add_wave_group image(memory) -into $tbcinputgroup]
+## add_wave /apatb_nn_infer_top/image_V_q0 -into $tb_image_group -radix hex
+## add_wave /apatb_nn_infer_top/image_V_ce0 -into $tb_image_group -color #ffff00 -radix hex
+## add_wave /apatb_nn_infer_top/image_V_address0 -into $tb_image_group -radix hex
+## save_wave_config nn_infer.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 24 [0.00%] @ "150000"
+// RTL Simulation : 1 / 24 [100.00%] @ "527470000"
+// RTL Simulation : 2 / 24 [100.00%] @ "1054770000"
+// RTL Simulation : 3 / 24 [100.00%] @ "1582070000"
+// RTL Simulation : 4 / 24 [100.00%] @ "2109370000"
+// RTL Simulation : 5 / 24 [100.00%] @ "2636670000"
+// RTL Simulation : 6 / 24 [100.00%] @ "3163970000"
+// RTL Simulation : 7 / 24 [100.00%] @ "3691270000"
+// RTL Simulation : 8 / 24 [100.00%] @ "4218570000"
+// RTL Simulation : 9 / 24 [100.00%] @ "4745870000"
+// RTL Simulation : 10 / 24 [100.00%] @ "5273170000"
+// RTL Simulation : 11 / 24 [100.00%] @ "5800470000"
+// RTL Simulation : 12 / 24 [100.00%] @ "6327770000"
+// RTL Simulation : 13 / 24 [100.00%] @ "6855070000"
+// RTL Simulation : 14 / 24 [100.00%] @ "7382370000"
+// RTL Simulation : 15 / 24 [100.00%] @ "7909670000"
+// RTL Simulation : 16 / 24 [100.00%] @ "8436970000"
+// RTL Simulation : 17 / 24 [100.00%] @ "8964270000"
+// RTL Simulation : 18 / 24 [100.00%] @ "9491570000"
+// RTL Simulation : 19 / 24 [100.00%] @ "10018870000"
+// RTL Simulation : 20 / 24 [100.00%] @ "10546170000"
+// RTL Simulation : 21 / 24 [100.00%] @ "11073470000"
+// RTL Simulation : 22 / 24 [100.00%] @ "11600770000"
+// RTL Simulation : 23 / 24 [100.00%] @ "12128070000"
+// RTL Simulation : 24 / 24 [100.00%] @ "12655370000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 12655450 ns : File "D:/HLS/code/exp3/build/hls_baseline/solution1/sim/verilog/nn_infer.autotb.v" Line 252
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Oct 27 00:03:24 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+C_TEST samples=24 correct=24 prediction_mismatches=0 score_mismatches=0
+TEST_PASS nn_infer mode=cosim
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+bad lexical cast: source type value could not be interpreted as target
+    while executing
+"rdi::set_property core_revision 2610270003 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 799)
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 27 00:03:28 2026...
+ERROR: [IMPL 213-28] Failed to generate IP.
+command 'ap_source' returned error code
+    while executing
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [HLS 200-112] Total elapsed time: 73.673 seconds; peak allocated memory: 98.350 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Tue Oct 27 00:03:28 2026...

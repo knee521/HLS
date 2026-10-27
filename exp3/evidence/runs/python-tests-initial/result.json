@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3",
+  "started_utc": "2026-10-26T15:55:30.364862+00:00",
+  "exit_code": 0,
+  "elapsed_s": 0.3458064000005834
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "D:/HLS/software/Xilinx/Vivado/2018.3/bin/vivado.bat",
+    "-mode",
+    "batch",
+    "-source",
+    "D:\\HLS\\code\\exp3\\build\\hls_baseline\\solution1\\impl\\ip\\run_ippack_compatible.tcl"
+  ],
+  "cwd": "D:\\HLS\\code\\exp3\\build\\hls_baseline\\solution1\\impl\\ip",
+  "started_utc": "2026-10-26T16:26:56.935770+00:00",
+  "native_exit_code": 0,
+  "exit_code": 0,
+  "elapsed_s": 3.6458053000387736
+}

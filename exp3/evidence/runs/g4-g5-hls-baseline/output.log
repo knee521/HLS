@@ -1,0 +1,21 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/HLS/software/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/HLS/software/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'lenovo' on host 'laptop-1ipp8016' (Windows NT_amd64 version 6.2) on Tue Oct 27 00:01:40 +0800 2026
+INFO: [HLS 200-10] In directory 'D:/HLS/code/exp3'
+ERROR: [HLS 200-70] The name 'D:/HLS/code/exp3/build/hls_baseline' contains illegal character ':' 
+ERROR: [HLS 200-70] The name 'D:/HLS/code/exp3/build/hls_baseline' contains illegal character '/' 
+ERROR: [HLS 200-70] You must open a project first
+command 'ap_source' returned error code
+    while executing
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [Common 17-206] Exiting vivado_hls at Tue Oct 27 00:01:40 2026...
